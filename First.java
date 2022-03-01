@@ -1,9 +1,10 @@
-package com.progrms.phase1;
+package com.oops.prgms;
 
-public class First {
-	public static void main(String[] args) {
-		System.out.println("Welcome to the world of JAVA");
-		System.out.println("Bye Bye..");
+public interface First {
+
+	public default void show() {
+		System.out.println("This is my first Interface method");
 	}
-
 }
+
+

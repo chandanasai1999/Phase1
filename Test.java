@@ -1,18 +1,15 @@
-package com.mphasis.serialization;
+package com.oops.prgms;
 
-public class Test {
-	public static void main(String[] args) {
-		Sender sender=new Sender();
+public class Test implements First,Second{
+
+	public void show() {
+		First.super.show();
+		Second.super.show();
+	}
 	
-		//object want to share between multiple thread
+	public static void main(String[] args) {
 		
-		User user1=new User("Chandana",sender);
-		User user2=new User("radhika",sender);
-		
-		user1.start();
-		user2.start();
-				
-				
-		}
-
+		Test t= new Test();
+		t.show();
+	}
 }
