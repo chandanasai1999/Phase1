@@ -1,25 +1,38 @@
-package com.progrms.phase1;
+package com.assisted.programs;
 
 public class TypeCasting {
+
 	public static void main(String[] args) {
-		//Implicit conversion
-		System.out.println("implicit type Casting");
+		
+		//implicit conversion
+		System.out.println("Implicit Type Casting");
 		char a='A';
-		System.out.println("value of a"+a);
+		System.out.println("Value of a: "+a);
+		
 		int b=a;
-		System.out.println("value of Int"+b);
-		float c=b;
-		System.out.println("value of Float"+c);
-		double d=b;
-		System.out.println("value of Double"+d);
-		long e=b;
-		System.out.println("value of long"+e);
-		System.out.println("Explicit Type conversion");
-		double x=89.90;
-		int y= (int)x;
-		System.out.println("value of x"+x);
-		System.out.println("value of y"+y);
+		System.out.println("Value of b: "+b);
+		
+		float c=a;
+		System.out.println("Value of c: "+c);
+		
+		long d=a;
+		System.out.println("Value of d: "+d);
+		
+		double e=a;
+		System.out.println("Value of e: "+e);
+		
+				
+		System.out.println("\n");
+		
+		System.out.println("Explicit Type Casting");
+		//explicit conversion
+		
+		double x=45.5;
+		int y=(int)x;
+		System.out.println("Value of x: "+x);
+		System.out.println("Value of y: "+y);
 		
 	}
-
 }
+
+
